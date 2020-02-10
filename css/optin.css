@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap');
+
+:root {
+    /* Primary */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    /* Accent */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    /* Neutral */
+    --light-gray-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.optin-lead {
+    margin-left: 2rem;
+}
+
+#optin-section {
+    background-color: var(--desaturated-blue);
+    color: #ffffff;
+    padding: 2rem;
+}
+
+#optin-section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+#optin-section p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.optin-content {
+    width: 40%;
+}
+
+.submit {
+    display: block;
+    margin-top: 0.75rem;
+}
+ 
+#optin-email {
+    padding: 0.65rem;
+    margin-right: 2.5rem;
+}
+
+ .optin-wrapper {
+     display: flex;
+     justify-content: space-between;
+     /* align-items: center; */
+     padding: 3rem;
+ }
+
+ @media(max-width: 1300px){
+     #optin-section h1 {
+         font-size: 1.5rem;
+     }
+ }
+
+ @media(max-width: 900px){
+     .optin-wrapper {
+         flex-direction: column;
+     }
+     .optin-content {
+         width: 100%;
+     }
+     .optin-lead {
+         margin: 0;
+     }
+      
+ }
+
+ @media(max-width: 760px){
+     #optin-email {
+         width: 100%;
+     }
+
+      .optin-lead {
+          margin-top: 2rem;
+      }
+      
+ }
+
+ @media(max-width: 500px){
+    .optin-wrapper {
+        text-align: center;
+    }
+ }
+
+@media(max-width: 450px){
+    #optin-section h1 {
+        font-size: 1.5rem;
+    }
+    .optin-wrapper {
+        width: 100%;
+    }
+    #submit {
+        padding: 0.5rem 2rem;
+    }
+}
+
+  
